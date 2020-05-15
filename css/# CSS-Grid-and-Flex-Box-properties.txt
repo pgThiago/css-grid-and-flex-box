@@ -1,0 +1,35 @@
+# CSS Grid and Flex Box properties
+
+/*  G R I D
+	-------
+	display: grid; 
+	properties:
+	grid-template-columns
+	grid-template-rows
+
+	grid-column-start
+  	grid-column-end
+  	
+  	grid-row-start
+  	grid-row-end
+	
+	grid-column-gap
+	grid-row-gap
+	grid-gap
+
+	justify-content
+	align-content
+*/
+
+/*
+	F L E X  B O X
+	--------------
+	display: flex; 
+	properties:
+	flex-direction
+	flex-wrap
+	flex-flow
+	justify-content
+	align-items
+	align-content
+*/

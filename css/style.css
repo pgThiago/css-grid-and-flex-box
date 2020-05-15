@@ -1,0 +1,80 @@
+
+
+/* My humble "framework" */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* vw viewport width */
+/* vh viewport height */
+
+.container{
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw 25vw; /* 4 Columns */
+	grid-template-rows: 25vh 50vh 25vh;    /* 3 Rows */
+	grid-template-areas: 
+	"header header header header"
+	"main main aside aside" 
+	"footer footer footer footer";
+}
+
+
+header{grid-area: header; background-color: #4527a0; display: flex; align-items: center;  justify-content: center;}
+
+main{grid-area: main; background-color: #01579b; display: flex; align-items: center;  justify-content: center;}
+
+aside{grid-area: aside; background-color: #880e4f; display: flex; align-items: center;  justify-content: center;}
+
+footer{grid-area: footer; background-color: #263238; display: flex; align-items: center;  justify-content: center;}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+.header-div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.main-div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.aside-div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.footer-div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+/* hover */
+
+.header-div h1:hover{
+	color: white;
+	transition: 1s;
+}
+.main-div h1:hover{
+	background-color: white;
+	transition: 1s;
+}
+.aside-div h1:hover{
+	background-color: white;
+	transition: 1s;
+}
+.footer-div h1:hover{
+	background-color: white;
+	transition: 1s;
+}
