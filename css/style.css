@@ -1,5 +1,3 @@
-
-
 /* My humble "framework" */
 *{
 	margin: 0;
@@ -9,6 +7,7 @@
 
 body, html {
   height: 100%;
+  overflow: hidden;
 }
 
 /* vw viewport width */
@@ -67,15 +66,15 @@ footer{grid-area: footer; background-color: #263238; display: flex; align-items:
 	transition: 1s;
 }
 .main-div h1:hover{
-	background-color: white;
+	color: white;
 	transition: 1s;
 }
 .aside-div h1:hover{
-	background-color: white;
+	color: white;
 	transition: 1s;
 }
 .footer-div h1:hover{
-	background-color: white;
+	color: white;
 	transition: 1s;
 }
 
