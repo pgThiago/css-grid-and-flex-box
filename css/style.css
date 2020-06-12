@@ -78,3 +78,15 @@ footer{grid-area: footer; background-color: #263238; display: flex; align-items:
 	background-color: white;
 	transition: 1s;
 }
+
+/* Media query */
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-areas: 
+		"header header header header"
+		"main main main main"
+		"aside aside aside aside" 
+		"footer footer footer footer";
+	}
+}
