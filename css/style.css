@@ -7,7 +7,6 @@
 
 body, html {
   height: 100%;
-  overflow-x: hidden;
 }
 
 /* vw viewport width */
@@ -35,45 +34,45 @@ footer{grid-area: footer; background-color: #263238; display: flex; align-items:
 /* -------------------------------------------------------------------------------------------------------------- */
 
 
-.header-div{
+.header-div {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 }
 
-.main-div{
+.main-div {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 }
 
-.aside-div{
+.aside-div {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 }
 
-.footer-div{
+.footer-div {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 /* hover */
 
-.header-div h1:hover{
+.header-div h1:hover {
 	color: white;
 	transition: 1s;
 }
-.main-div h1:hover{
+.main-div h1:hover {
 	color: white;
 	transition: 1s;
 }
-.aside-div h1:hover{
+.aside-div h1:hover {
 	color: white;
 	transition: 1s;
 }
-.footer-div h1:hover{
+.footer-div h1:hover {
 	color: white;
 	transition: 1s;
 }
@@ -81,11 +80,39 @@ footer{grid-area: footer; background-color: #263238; display: flex; align-items:
 /* Media query */
 
 @media screen and (max-width: 900px){
-	.container{
+	.container {
+		display: grid;
+		grid-template-columns: 25vw 25vw 25vw 25vw; /* 4 Columns */
+		grid-template-rows: 25vh 25vh 25vh 25vh;
 		grid-template-areas: 
 		"header header header header"
 		"main main main main"
 		"aside aside aside aside" 
 		"footer footer footer footer";
+	}
+
+	.header-div {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		
+	}
+	
+	.main-div {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	
+	.aside-div {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	
+	.footer-div {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 }
